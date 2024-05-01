@@ -167,6 +167,10 @@ footer a {
     flex-direction: column;
 }
 
+.contact-info span {
+    margin: 5px;
+}
+
 .footer-links {
     display: flex;
     flex-direction: column;
