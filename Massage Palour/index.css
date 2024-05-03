@@ -54,10 +54,33 @@ header::before {
     padding: 5px;
     background: navy;
     color: aliceblue;
+    overflow-x: hidden;
 }
 
-.chyron span {
+.chyron p {
+    width: 100%;
     margin: 0px 20px;
+    font-size: 1.25rem; 
+}
+
+.chyron > p {
+    /* color: #fff; */
+    font-size: 1.25rem; 
+    animation-name: chyron-slide;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+@keyframes chyron-slide {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(110%);
+    }
 }
 
 .chyron a {
@@ -119,6 +142,80 @@ menu a {
     font-weight: bold;
 }
 
+/* Section */
+
+.booking {
+    display: flex;
+    height: 300px;
+    width: 60%;
+    border-radius: 3px;
+    margin: -30px auto 70px;
+    background: aliceblue;
+}
+
+.form-img {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    height: 100%;
+    width: 33%;
+}
+
+.form-img img {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    height: 100%;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    width: 66%;
+    text-align: center;
+    background: inherit;
+}
+
+input {
+    width: 80%;
+    height: 35px;
+    padding: 10px;
+    margin: 15px auto;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    width: 60%;
+    height: 40px;
+    cursor: pointer;
+    color: aliceblue;
+    background: orangered;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 25px;
+}
+
+.testimonials h1 {
+    width: 100%;
+}
+
+.testimony {
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    border-radius: 100px;
+    background: aliceblue;
+}
+.testimony p {
+    font-weight: bold;
+    margin-top: 40px;
+}
 
 
 
