@@ -1,3 +1,5 @@
+/* General */
+
 * {
     box-sizing: border-box;
 }
@@ -12,6 +14,19 @@ body {
 }
 
 
+/* Fonts */
+.chyron p,
+menu,
+.head-message,
+.booking,
+.testimonials,
+.testimoy p,
+.testimony span,
+footer {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
 /* Header */
 
 header {
@@ -51,7 +66,6 @@ header::before {
     top: 0%;
     width: 100%;
     height: 30px;
-    padding: 5px;
     background: navy;
     color: aliceblue;
     overflow-x: hidden;
@@ -59,13 +73,13 @@ header::before {
 
 .chyron p {
     width: 100%;
-    margin: 0px 20px;
-    font-size: 1.25rem; 
+    margin-top: 0px;
+    font-size: small;
 }
 
-.chyron > p {
+.chyron>p {
     /* color: #fff; */
-    font-size: 1.25rem; 
+    font-size: 1.25rem;
     animation-name: chyron-slide;
     animation-duration: 20s;
     animation-timing-function: linear;
@@ -78,6 +92,7 @@ header::before {
     0% {
         transform: translateX(-50%);
     }
+
     100% {
         transform: translateX(110%);
     }
@@ -118,6 +133,7 @@ menu {
     display: flex;
     justify-content: space-evenly;
     width: 50%;
+    font-weight: normal;
     font-size: 25px;
 }
 
@@ -127,19 +143,20 @@ menu a {
 }
 
 .head-message {
-    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
     width: 350px;
+    font-weight: bold;
     color: aliceblue;
 }
 
 .head-message h2 {
     font-size: 30px;
-    font-weight: bold;
 }
 
 .head-message p {
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 22px;
+    font-weight: bolder;
 }
 
 /* Section */
@@ -150,6 +167,7 @@ menu a {
     width: 60%;
     border-radius: 3px;
     margin: -30px auto 70px;
+    font-weight: normal;
     background: aliceblue;
 }
 
@@ -187,9 +205,10 @@ input {
 
 input[type=submit] {
     width: 60%;
-    height: 40px;
+    height: 50px;
     cursor: pointer;
     color: aliceblue;
+    font-size: 20px;
     background: orangered;
 }
 
@@ -203,6 +222,7 @@ input[type=submit] {
 
 .testimonials h1 {
     width: 100%;
+    font-size: 35px;
 }
 
 .testimony {
@@ -212,9 +232,14 @@ input[type=submit] {
     border-radius: 100px;
     background: aliceblue;
 }
+
 .testimony p {
-    font-weight: bold;
     margin-top: 40px;
+    font-weight: bold;
+}
+
+.testimony span {
+    font-weight: normal;
 }
 
 
@@ -230,6 +255,7 @@ footer {
     padding: 10px;
     margin-top: 25px;
     background: rgb(2, 2, 65);
+    font-weight: normal;
     color: aliceblue;
 }
 
