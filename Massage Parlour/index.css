@@ -13,6 +13,10 @@ body {
     padding: 0;
 }
 
+button:hover {
+    color: black;
+}
+
 
 /* Fonts */
 .chyron p,
@@ -122,6 +126,10 @@ menu a {
     text-decoration: none;
 }
 
+menu a:hover {
+    text-decoration: underline;
+}
+
 .head-message {
     margin-left: auto;
     margin-right: auto;
@@ -183,6 +191,16 @@ input {
     border-radius: 5px;
 }
 
+input:focus {
+    font-weight: bolder;
+    font-size: 15px;
+    outline: 2px solid orangered;
+}
+
+input:focus::placeholder {
+    color: black;
+}
+
 input[type=submit] {
     width: 60%;
     height: 50px;
@@ -191,6 +209,10 @@ input[type=submit] {
     font-weight: bold;
     font-size: 20px;
     background: orangered;
+}
+
+input[type=submit]:hover {
+    color: black;
 }
 
 .testimonials {
@@ -242,6 +264,10 @@ footer {
 
 footer a {
     color: aliceblue;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 .footer-info {
