@@ -30,34 +30,11 @@ footer {
 /* Header */
 
 header {
-    position: relative;
     height: 400px;
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url(https://images.unsplash.com/photo-1595871151608-bc7abd1caca3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    z-index: -5;
-    /* Makes sure the overlay does not overlay the child elements */
-}
-
-header * {
-    z-index: 10;
-    /* Makes sure all elements are above their parent element and the
-    ::after pseudo element */
-}
-
-header::before {
-    background-color: rgba(41, 40, 40, 0.35);
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* The above makes sure the overlay is seen above the header */
-    z-index: -5;
-    /* Makes sure the overlay does not overlay the child elements
-    of the header */
 }
 
 .chyron {
@@ -132,6 +109,7 @@ nav button {
 }
 
 menu {
+    position: relative;
     display: flex;
     justify-content: space-evenly;
     width: 50%;
