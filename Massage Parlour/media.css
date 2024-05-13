@@ -92,6 +92,13 @@
     .testimony {
         margin: 15px;
     }
+
+
+    /* Footer */
+
+    .footer-links {
+        justify-content: flex-end;
+    }
 }
 
 
