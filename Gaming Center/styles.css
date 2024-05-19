@@ -125,6 +125,7 @@ main {
     width: 100%;
     text-align: center;
     margin-bottom: 50px;
+    padding-bottom: 25px;
 }
 
 #events-heading {
@@ -195,5 +196,34 @@ main {
 /* Footer */
 
 footer {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    width: 100%;
     margin-top: 50px;
+    background-image: linear-gradient(black, rgb(22, 22, 22), rgb(34, 34, 34));
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-links a {
+    color: whitesmoke;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
 }
