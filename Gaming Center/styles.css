@@ -70,14 +70,14 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    height: auto;
-    padding: 35px;
-    margin-bottom: 75px;
+    height: 450px;
+    margin-bottom: 50px;
 }
 
 .header-message {
-    width: 45%;
-    height: 95%;
+    width: 40%;
+    padding: 25px;
+    height: 100%;
 }
 
 .header-message h1 {
@@ -86,11 +86,30 @@ header {
 
 .header-message p {
     font-size: 30px;
+    width: 75%;
 }
 
-.img-slideshow {
-    width: 45%;
+.slideshow {
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.slideshow-img {
+    display: inline-block;
+    position: relative;
     height: 95%;
+    width: 80%;
+    margin: auto 15px;
+    border-radius: 10px;
+    transition: 1.5s;
+}
+
+.slideshow-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
 }
 
 .header-link {
